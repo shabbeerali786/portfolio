@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shabbeerali J — Full Stack Developer. Final year Computer Science Engineering student building modern web applications with React, Node.js, and more.">
+  <meta name="author" content="Shabbeerali J">
+  <meta name="keywords" content="Shabbeerali J, Full Stack Developer, Portfolio, React Developer, Node.js, MERN, Computer Science Student">
+  <meta property="og:title" content="Shabbeerali J— Full Stack Developer Portfolio">
+  <meta property="og:description" content="Portfolio of Shabbeerali J, Full Stack Developer and final year CSE student.">
+  <meta property="og:type" content="website">
+  <title>Shabbeerali J — Full Stack Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <p class="loader-text">&lt;Loading /&gt;</p>
+  </div>
+
+  <!-- Animated particles background -->
+  <canvas id="particles"></canvas>
+  <div class="gradient-orbs">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>SA<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow"><span class="dot"></span> Available for opportunities</p>
+          <h1>
+            Hi,I'm <span class="gradient-text">Shabbeerali J</span>
+          </h1>
+          <h2 class="role">
+            I'm a <span id="typing" class="typing"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-desc">
+            Final year Information Technology student crafting modern, scalable
+            web applications with clean code and thoughtful design.
+          </p>
+          <div class="hero-cta">
+            <a href="https://drive.google.com/file/d/1pnsU6_xRt9fDvjWtPlsA-r6f9LjzHS63/view" class="btn btn-primary" download>
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fa-regular fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/shabbeerali786" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:shabbeeralij@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar-glow"></div>
+            <div class="avatar">
+              <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+            <span class="floating-badge fb-1"><i class="fa-brands fa-react"></i></span>
+            <span class="floating-badge fb-2"><i class="fa-brands fa-node-js"></i></span>
+            <span class="floating-badge fb-3"><i class="fa-brands fa-js"></i></span>
+            <span class="floating-badge fb-4"><i class="fa-solid fa-database"></i></span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="glass about-card reveal">
+            <p>
+              I'm <strong>Shabbeerali J</strong>, a final year Information Technology
+              student with a strong passion for building software that solves real-world
+              problems. I love turning ideas into beautiful, performant products.
+            </p>
+            <p>
+              My journey in development is driven by curiosity — exploring full stack
+              technologies, system design, and clean architecture. I enjoy collaborating
+              on impactful projects and continuously sharpening my craft.
+            </p>
+            <p class="objective">
+              <strong>Career Objective —</strong> To join an innovative engineering team
+              where I can contribute to building scalable products while growing as a
+              well-rounded full stack engineer.
+            </p>
+            <div class="about-stats">
+              <div><h3>15+</h3><span>Projects</span></div>
+              <div><h3>10+</h3><span>Technologies</span></div>
+              <div><h3>3+</h3><span>Years Coding</span></div>
+            </div>
+          </div>
+          <div class="glass highlights reveal">
+            <h3>Strengths &amp; Interests</h3>
+            <ul>
+              <li><i class="fa-solid fa-code"></i> Full Stack Web Development</li>
+              <li><i class="fa-solid fa-database"></i> Databases &amp; API Design</li>
+              <li><i class="fa-solid fa-bolt"></i> Performance &amp; Clean Code</li>
+              <li><i class="fa-solid fa-people-group"></i> Team Collaboration</li>
+              <li><i class="fa-solid fa-lightbulb"></i> Problem Solving</li>
+              <li><i class="fa-solid fa-graduation-cap"></i> Continuous Learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">02 — Skills</span>
+          <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+        </div>
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">03 — Projects</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass reveal">
+            <div class="project-img project-img-1">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <div class="project-body">
+              <h3>Online Medical Consultation</h3>
+              <p>Telemedicine platform connecting patients with doctors via real-time video and chat.</p>
+              <div class="badges">
+                <span>React</span><span>Node.js</span><span>MongoDB</span><span>WebRTC</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-img project-img-2">
+              <i class="fa-solid fa-blog"></i>
+            </div>
+            <div class="project-body">
+              <h3>Blogging Platform</h3>
+              <p>Full-featured blogging app with rich text editor, comments, tags, and authentication.</p>
+              <div class="badges">
+                <span>React</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-img project-img-3">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <div class="project-body">
+              <h3>Project Management Tool</h3>
+              <p>Real-time collaboration tool with Kanban boards, live updates, and team chat.</p>
+              <div class="badges">
+                <span>Angular</span><span>Node.js</span><span>Socket.IO</span><span>MySQL</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">04 — Education</span>
+          <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass timeline-content">
+              <span class="timeline-date">2022 — Present</span>
+              <h3>B.Tech Information Technology</h3>
+              <p class="muted">Final Year Student</p>
+              <p>Focused on full stack development, data structures, databases, and software engineering principles.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass timeline-content">
+              <span class="timeline-date">2020 — 2022</span>
+              <h3>Higher Secondary Education</h3>
+              <p class="muted">Science Stream — Mathematics &amp; Computer Science</p>
+              <p>Built strong foundations in mathematics, logic, and programming fundamentals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">05 — Contact</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="glass contact-info reveal">
+            <h3>Get in touch</h3>
+            <p class="muted">I'm open to internships, freelance work, and collaboration.</p>
+            <ul class="contact-list">
+              <li><i class="fa-regular fa-envelope"></i> shabbeeralij@gmail.com</li>
+              <li><i class="fa-solid fa-phone"></i> +91 6381078986</li>
+              <li><i class="fa-solid fa-location-dot"></i> India</li>
+            </ul>
+            <div class="socials">
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <form class="glass contact-form reveal" id="contactForm">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-regular fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shabbeerali J — Crafted with <i class="fa-solid fa-heart"></i> and lots of <i class="fa-solid fa-mug-hot"></i></p>
+      <div class="socials small">
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
